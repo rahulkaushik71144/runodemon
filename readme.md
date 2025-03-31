@@ -8,6 +8,7 @@ This system converts natural language queries into MongoDB queries using Google 
 - Retrieves schema information dynamically(RAG, basically)
 - Validates and executes MongoDB queries efficiently(stops harmful queries (that might delete the entire database))
 - Provides natural language response
+- A simple UI for better demonstration
 
 ## Dependencies
 Install the required dependencies using:
@@ -60,9 +61,19 @@ query_system.process_query("How many messages did each agent send?")
 Neha Kapoor sent 5 messages, Amit Verma sent 3 messages.
 ```
 
-## API Endpoints (If using Flask)
-| Endpoint      | Method | Description |
-|--------------|--------|-------------|
-| `/query`     | POST   | Process a natural language query and return results 
+## API Endpoints
+| Endpoint       | Method | Description                                                |
+|-------------- |--------|------------------------------------------------------------|
+| `/`           | GET    | Renders the main frontend page                             |
+| `/api/query`  | POST   | Converts a natural language query into a MongoDB query and returns results |
+| `/api/history`| GET    | Returns a list of previously processed queries            |
+| `/api/schema` | GET    | Retrieves the schema and fields of the MongoDB collections |
+
+
+
+
+
+
+
 
 
