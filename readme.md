@@ -10,6 +10,9 @@ This system converts natural language queries into MongoDB queries using Google 
 - Provides natural language response
 - A simple UI for better demonstration
 
+## Deployment 
+The project is deployed on render, you can access it here: https://runodemon.onrender.com (sometimes due to inactivity it might be slow, so please be patient.)
+
 ## Dependencies
 Install the required dependencies using:
 ```sh
