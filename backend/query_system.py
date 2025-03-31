@@ -11,7 +11,7 @@ class NLToMongoDBQuerySystem:
         # CONFIGURE THESE VALUES
        # CONFIGURE THESE VALUES
         API_KEY = "AIzaSyCYsPGc7kXhDteLjmkn2sXrk15q7nevHeY"  # Replace with your actual Gemini API key
-        MONGODB_URI = "mongodb://localhost:27017/"  # Replace with your MongoDB connection string
+        MONGODB_URI = "mongodb+srv://rahulkaushik71144:rahul%4071144@cluster0.21okoyt.mongodb.net/whatsapp"  # Replace with your MongoDB connection string
         DB_NAME = "whatsapp"  # Replace with your database name
         COLLECTION_NAME = "messages"  # Replace with your collection name  # Replace with your collection name
         
