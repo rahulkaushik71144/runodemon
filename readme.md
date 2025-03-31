@@ -25,6 +25,9 @@ DB_NAME = "whatsapp"  # Replace with your database name
 COLLECTION_NAME = "messages"  # Replace with your collection name
 ```
 
+## Running the system
+``` python app.py ```
+
 ## Usage
 ### Example Queries:
 #### 1. Find messages sent to Vikram Das
@@ -62,12 +65,4 @@ Neha Kapoor sent 5 messages, Amit Verma sent 3 messages.
 |--------------|--------|-------------|
 | `/query`     | POST   | Process a natural language query and return results 
 
-## Notes
-- The system limits query execution results to 100 documents by default.
-- Query history is stored to improve accuracy of future queries.
-
-## Future Improvements
-- Support for filtering by date ranges
-- More natural explanations for complex aggregations
-- Integration with a frontend UI for user interaction
 
