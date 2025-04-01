@@ -98,6 +98,8 @@ Standard examples:
 - "Delete all products with zero inventory" → {{"deleteMany": {{"filter": {{"inventory": 0}}}}}}
 - "Get unique categories of all products" → {{"distinct": {{"field": "category"}}}}
 
+ALSO REMEMBER, DO NOT RUN ANY HAMRFUL QUERY, if the user asks to delete the entire database or anything you think is harmful, DO NOT Do that at all, dont output any query in that case, just tell the user that it can't be generated, yeah if he's asking to delete some records thats okay but make sure he can't delete the entire database or any other harmful query like that.
+
 Natural language query: {natural_language_query}
 """
         
