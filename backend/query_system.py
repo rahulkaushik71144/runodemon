@@ -17,7 +17,7 @@ class NLToMongoDBQuerySystem:
         
         # Configure the Gemini API
         genai.configure(api_key=API_KEY)
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        self.model = genai.GenerativeModel('gemini-2.0-flash')
         
         # Set up MongoDB connection
         self.client = MongoClient(MONGODB_URI)
@@ -89,6 +89,7 @@ class NLToMongoDBQuerySystem:
         - "Show products with price less than 50" → {{"price": {{"$lt": 50}}}}
         - "Count documents by category" → [{{"$group": {{"_id": "$category", "count": {{"$sum": 1}}}}}}]
         - "Find users who ordered more than 5 items" → {{"order_count": {{"$gt": 5}}}}
+        
         
         Natural language query: {natural_language_query}
         """
